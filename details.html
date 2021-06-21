@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="img/logo.png" rel="icon" />
+
+    <title>Santiago Restaurant</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <ul class="links">
+          <li><i class="fas fa-bars"> </i></li>
+          <li>
+            <a href="login.html"> <i class="fas fa-user-circle"></i> </a>
+          </li>
+          <li>
+            <a href="cart.html">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="badge badge-warning">4</span>
+            </a>
+          </li>
+        </ul>
+
+        <a href="/">
+          <img src="img/logo.png" alt="logo" class="logo" />
+        </a>
+        <select name="lang">
+          <option value="ar">العربية</option>
+          <option value="en">الانجليزية</option>
+        </select>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="container">
+        <h1>قائمة الطعام</h1>
+        <ul class="path">
+          <li>
+            <a href="">قائمة الطعام</a>
+          </li>
+          <li>
+            <span href="">الفطور</span>
+          </li>
+        </ul>
+
+        <div class="landing detail">
+          <div class="container">
+            <img src="img/2/Mask5.png" alt="" />
+          </div>
+        </div>
+
+        <div class="cont">
+          <div class="order-form">
+            <div class="info">
+              <div class="group">
+                <h2 class="title">بان تشيلى مع بطاطس</h2>
+                <span class="">20 ريال سعودى</span>
+              </div>
+              <div class="group">
+                <p>
+                  الدجاج او اللحم او الجمبرى المطبوخ على المقلاة الصينى مضاف
+                  اليه صلصة الفلفل الحار او التوابل الصينية
+                </p>
+              </div>
+              <div class="group">
+                <span>السعرات الحرارية</span>
+                <span>70 سعرة حرارية</span>
+              </div>
+            </div>
+
+            <div class="form-box">
+              <form action="">
+                <div>
+                  <div class="accordion title">
+                    إختيار من : (إختر 1 فقط)
+                    <div class="inner"></div>
+                  </div>
+
+                  <div class="panel show">
+                    <div class="group">
+                      <label for="mediom">
+                        <input type="radio" name="size" value="" />
+                        <span class="text"> الحجم الوسط</span></label
+                      >
+                      <span class="price">20 ريال سعودى</span>
+                    </div>
+                    <div class="group">
+                      <label for="larg">
+                        <input
+                          value="kl"
+                          type="radio"
+                          name="size"
+                          value="larg"
+                        />
+                        <span class="text">الحجم الكبير</span>
+                      </label>
+
+                      <span class="price">20 ريال سعودى</span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="accordion title">
+                    هل ترغب في اضافة شيء؟
+                    <div class="inner"></div>
+                  </div>
+                  <div class="panel show">
+                    <div class="checkbox">
+                      <div class="group">
+                        <label for="check1">
+                          <input
+                            type="checkbox"
+                            class="checkbox"
+                            name="check1"
+                            value=""
+                          />
+                          <span class="text">إضافة جبنة موتزاريلا</span>
+                        </label>
+                        <span class="price">20 ريال سعودى</span>
+                      </div>
+                      <div class="group">
+                        <label for="check2">
+                          <input
+                            type="checkbox"
+                            class="checkbox"
+                            name="check2"
+                            value=""
+                          />
+                          <span class="text">إضافة صوص باربيكيو</span>
+                        </label>
+                        <span class="price">20 ريال سعودى</span>
+                      </div>
+                      <div class="group">
+                        <label for="check2">
+                          <input
+                            type="checkbox"
+                            class="checkbox"
+                            name="check3"
+                            value=""
+                          />
+                          <span class="text">إضافة سلطة طحينة</span></label
+                        >
+                        <span class="price">20 ريال سعودى</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="accordion title">
+                    هل ترغب في إزالة شيء؟
+                    <div class="inner"></div>
+                  </div>
+                  <div class="panel show">
+                    <div class="checkbox">
+                      <div class="group">
+                        <label for="check1">
+                          <input
+                            type="checkbox"
+                            class="checkbox"
+                            name="check1"
+                            value=""
+                          />
+                          <span class="text">إزالة جبنة موتزاريلا</span>
+                        </label>
+                        <label for="check2">
+                          <input
+                            type="checkbox"
+                            class="checkbox"
+                            name="check2"
+                            value=""
+                          />
+                          <span class="text">إزالة صوص باربيكيو</span>
+                        </label>
+                        <label for="check2">
+                          <input
+                            type="checkbox"
+                            class="checkbox"
+                            name="check2"
+                            value=""
+                          />
+                          <span class="text">إزالة صوص باربيكيو</span>
+                        </label>
+                        <label for="check2">
+                          <input
+                            type="checkbox"
+                            class="checkbox"
+                            name="check3"
+                            value=""
+                          />
+                          <span class="text">إزالة سلطة طحينة</span></label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <label for="comment">ملاحظات</label>
+                <textarea name="comment" placeholder="اضف ملاحظة"></textarea
+                ><br />
+                <div class="btn-section">
+                  
+                  <div class="btn number-input">
+                    <button
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                      class="minus"
+                    ></button>
+                    <input
+                      class="quantity"
+                      min="0"
+                      name="quantity"
+                      value="1"
+                      type="number"
+                    />
+                    <button
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                      class="plus"
+                    ></button>
+                  </div><div>
+                    <button class="btn add">
+                      <span>اضافة</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="review-list">
+            <div>
+              <div class="review">
+                <div class="group border-buttom">
+                  <h2>التقييمات</h2>
+
+                  <div>
+                    <span class="text-muted">4.0</span><br />
+                    <span class="fa fa-star star-active ml-3"></span>
+                    <span class="fa fa-star star-active"></span>
+                    <span class="fa fa-star star-active"></span>
+                    <span class="fa fa-star star-active"></span>
+                    <span class="fa fa-star inactive"></span>
+                  </div>
+                </div>
+              </div>
+
+              <ul>
+                <li class="card article">
+                  <div class="row d-flex">
+                    <div class="">
+                      <img
+                        class="profile-pic"
+                        src="https://i.imgur.com/V3ICjlm.jpg"
+                      />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h3 class="mt-2 mb-0 mt-00">عبدالله محمد</h3>
+                      <div>
+                        <p class="">
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star star-inzzactive"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="ml-auto">
+                      <p class="text-muted pt-5 pt-sm-3">منذ 3 أسابيع</p>
+                    </div>
+                  </div>
+                  <div class="row text-left">
+                    <p class="content">
+                      طعم رائع و خدمة ممتازة لكم منى كل الشكر
+                    </p>
+                  </div>
+                </li>
+                <li class="card article">
+                  <div class="row d-flex">
+                    <div class="">
+                      <img
+                        class="profile-pic"
+                        src="https://i.imgur.com/V3ICjlm.jpg"
+                      />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h3 class="mt-2 mb-0 mt-00">عبدالله محمد</h3>
+                      <div>
+                        <p class="">
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star active"></span>
+                          <span class="fa fa-star star-inactive"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="ml-auto">
+                      <p class="text-muted pt-5 pt-sm-3">منذ 3 أسابيع</p>
+                    </div>
+                  </div>
+                  <div class="row text-left">
+                    <p class="content">
+                      طعم رائع و خدمة ممتازة لكم منى كل الشكر
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <button class="new-comment btn">اضف تقييمك</button>
+            </div>
+          </div>
+        </div>
+        <!-- slider section -->
+        <div class="container-fluid">
+          <div
+            id="carouselExample"
+            class="carousel slide"
+            data-ride="carousel"
+            data-interval="12000"
+          >
+            <div
+              class="carousel-inner row w-100 mx-auto flex-nowrap"
+              role="listbox"
+            >
+              <div class="carousel-item col-md-3 active">
+                <div class="img">
+                  <img src="img/3/dinner-2.png" alt="img" />
+                  <div class="sold-out">sold out</div>
+
+                </div>
+              </div>
+              <div class="carousel-item col-md-3">
+                <div class="img">
+              <img src="img/3/dinner-2.png" alt="img" />
+              <i class="fas fa-cart-arrow-down add"></i>
+              <i class="far fa-heart"></i>
+            </div>
+              </div>
+              <div class="carousel-item col-md-3">
+               <div class="img">
+              <img src="img/3/dinner-6.png" alt="img" />
+
+            </div>
+              </div>
+              <div class="carousel-item col-md-3">
+                <div class="img">
+              <img src="img/2/drink-2.png" alt="img" />
+
+            </div>
+              </div>
+            
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExample"
+              role="button"
+              data-slide="prev"
+            >
+              <i class="fa fa-chevron-left fa-lg text-muted"></i>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next text-faded"
+              href="#carouselExample"
+              role="button"
+              data-slide="next"
+            >
+              <i class="fa fa-chevron-right fa-lg text-muted"></i>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="overlay">
+        <img src="img/Group 509.svg" alt="" />
+        <h2>نحن نسعى دائما لارضاء عملاؤنا</h2>
+        <h3>ماهو تقييمك ؟</h3>
+        <div>
+          <span class="fa fa-star star-inactive"></span>
+          <span class="fa fa-star star-inactive"></span>
+          <span class="fa fa-star star-inactive"></span>
+          <span class="fa fa-star star-inactive"></span>
+          <span class="fa fa-star star-inactive"></span>
+        </div>
+        <textarea
+          name="comment"
+          placeholder="اضف تعليقا"
+          form=""
+          class="comment"
+        ></textarea
+        ><br />
+        <button class="btn add-comment">اضف تقييمك</button>
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

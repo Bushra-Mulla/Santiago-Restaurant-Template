@@ -1,0 +1,202 @@
+.intro {
+  padding: 30px 15px 15px 30px;
+}
+form {
+  direction: rtl;
+}
+.form-box .container {
+  margin-top: 40px;
+  background: #f9f9f9 0% 0% no-repeat padding-box;
+  max-width: 720px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 25px;
+}
+
+.in-line {
+  display: inline-block;
+  width: 49%;
+  margin: 0;
+}
+
+.in-line label {
+  display: block !important;
+  width: 150% !important;
+}
+
+.form-box i,
+.input-icon i {
+  position: absolute;
+  padding: 16px;
+  min-width: 45px;
+}
+.form-box .fa-user-friends {
+  color: white;
+  text-shadow: 0 0 3px rgb(54, 54, 54);
+}
+.form-box h2 {
+  position: relative;
+  text-align: center;
+  font-family: normal normal 600 Poppins;
+  font-size: 40px;
+  color: #333333;
+}
+
+.form-box h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 132px;
+  transform: translateX(-50%);
+  border: 2px solid #333333;
+  background-color: #333333;
+}
+
+.form-box label {
+  display: flex;
+  font-family: normal normal 600 Poppins;
+  font-size: 25px;
+  color: #333333;
+  margin: 10px;
+}
+.form-box .main-input {
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  font-family: normal normal medium Poppins;
+  font-size: 25px;
+  height: 50px;
+  width: 100%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+}
+.iti {
+  position: relative;
+  width: 100%;
+}
+.register-link:hover {
+  color: #85311b;
+}
+.form-box .redio-bg {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  padding-right: 25px;
+  box-shadow: 0px 3px 6px #00000029;
+  background: #ffffff 0% 0% no-repeat padding-box;
+}
+@media (max-width: 767px) {
+  .form-box .in-line {
+    display: block;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.form-box .radio-size {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  display: block;
+  cursor: pointer;
+}
+.text {
+  text-align: right;
+  font: normal normal bold 20px/30px Poppins;
+  letter-spacing: 0px;
+  color: #333333;
+}
+.form-box .gender {
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+
+.form-box .btn {
+  margin-top: 73px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box p {
+  margin-top: 73px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: normal normal 600 25px/60px Poppins;
+  color: #333333;
+}
+.form-box #submit {
+  background: #333333 0% 0% no-repeat padding-box;
+  border-radius: 15px;
+  text-align: center;
+  font: normal normal 600 30px/46px Poppins;
+  color: #ffffff;
+}
+
+.form-box .submit:hover {
+  background: #535353 0% 0% no-repeat padding-box;
+}
+.order-form .form-box textarea {
+  height: 155px;
+  width: 96%;
+  background: #f9f9f9 0% 0% no-repeat padding-box;
+  border-radius: 15px;
+}
+
+.order-form .form-box .add {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  text-align: center;
+  font: normal normal 600 30px/46px Poppins;
+  color: #333333;
+}
+
+.order-form .form-box .accordion {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: right;
+  outline: none;
+  transition: 0.4s;
+}
+.order-form .form-box .inner {
+  width: 100%;
+  height: 1px;
+  margin: 0px auto;
+  padding-top: 10px;
+  border-bottom: 2px solid #252525;
+}
+
+.order-form .form-box .accordion:after {
+  content: "\f077";
+  color: #777;
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  float: left;
+  margin-left: 5px;
+  position: relative;
+  bottom: 20px;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.order-form .form-box .active:after {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+.order-form .form-box .panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+}
+.order-form .form-box .panel.show {
+  display: block !important;
+}

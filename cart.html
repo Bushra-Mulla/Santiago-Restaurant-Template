@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="img/logo.png" rel="icon" />
+    <title>Santiago Restaurant</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <ul class="links">
+          <li><i class="fas fa-bars"> </i></li>
+          <li>
+            <a href="login.html"> <i class="fas fa-user-circle"></i> </a>
+          </li>
+          <li>
+            <a href="cart.html">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="badge badge-warning">4</span>
+            </a>
+          </li>
+        </ul>
+
+        <a href="/">
+          <img src="img/logo.png" alt="logo" class="logo" />
+        </a>
+        <select name="lang">
+          <option value="ar">العربية</option>
+          <option value="en">الانجليزية</option>
+        </select>
+      </div>
+    </header>
+    <div id="stepProgressBar">
+      <div class="step">
+        <div class="bullet"></div>
+        <p class="step-text">طلباتك</p>
+      </div>
+      <div class="step">
+        <div class="bullet"></div>
+        <p class="step-text">الفاترة</p>
+      </div>
+      <div class="step">
+        <div class="bullet"></div>
+        <p class="step-text">التنفيذ</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="container">
+        <div class="menu" id="cart">
+          <div class="card" id="details">
+            <div class="img">
+              <img src="img/3/dinner-2.png" alt="img" />
+            </div>
+            <div class="info">
+              <div class="group">
+                <h2>
+                  بان تشيلى مع بطاطس
+                  <div class="line"></div>
+                </h2>
+                <span>20 ريال سعودى</span>
+              </div>
+              <p>
+                الدجاج او اللحم او الجمبرى المطبوخ على المقلاة الصينى مضاف اليه
+                صلصة الفلفل الحار او التوابل الصينية
+              </p>
+              <div class="input-icone">
+                <span class="note">ملاحظات</span>
+                <textarea name="comment" placeholder="اضف ملاحظة"></textarea>
+              </div>
+
+              <div class="btn-section">
+                <input type="button" class="btn delete" value="حذف" />
+                <div class="btn number-input">
+                  <button
+                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus"
+                  ></button>
+                  <input
+                    class="quantity"
+                    min="0"
+                    name="quantity"
+                    value="1"
+                    type="number"
+                  />
+                  <button
+                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-section">
+          <button id="nextBtn"><a href="checkout.html">التالى</a></button>
+          <button class="btn back"><a href="index.html">العودة للقائمة</a></button>
+        </div>
+        <!-- <div id="main">
+          <button id="previousBtn">Previous</button>
+          <button id="nextBtn">Next</button>
+          <button id="finishBtn">Finish</button>
+        </div> -->
+      </div>
+    </div>
+  </body>
+</html>

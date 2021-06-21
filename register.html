@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="img/logo.png" rel="icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <select name="lang">
+          <option value="ar">العربية</option>
+          <option value="en">الانجليزية</option>
+        </select>
+
+        <img src="img/logo.svg" alt="logo" class="logo" />
+        <ul class="links">
+          <li>
+            <a href=""> <i class="fas fa-user-circle"></i> </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="badge badge-warning">4</span>
+            </a>
+          </li>
+          <li><i class="fas fa-bars"> </i></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="form-box">
+      <div class="container">
+        <div class="intro">
+          <h2 class="form-title">التسجيل لأول مرة</h2>
+          <form>
+            <div class="in-line">
+              <label for="fname">الاسم الاول</label>
+              <i class="far fa-user"></i>
+              <input class="main-input" type="text" id="fname" name="fname" />
+            </div>
+            <div class="in-line">
+              <label for="lname">الاسم الاخير</label>
+              <i class="fas fa-user-friends"></i>
+              <input class="main-input" type="text" id="lname" name="lname" />
+            </div>
+            <div class="">
+              <label for="code">البريد الالكترونى</label>
+              <i class="far fa-envelope icon"></i>
+              <input class="main-input" type="email" id="email" name="email" />
+            </div>
+            <div class="in-line">
+              <label for="gender">الجنس</label> 
+              <div class="redio-bg">
+                <label for="male">
+                  <input class="gender"type="radio"name="gender"value="male"/>
+                  <span> ذكر</span></label>
+                <label for="Female">
+                  <input type="radio" class="gender"name="gender"value="male"/>
+                  <span>انثى</span>
+                </label>
+              </div>
+            </div>
+            <div class="in-line">
+              <label for="phone">رقم الجوال</label>
+              <input class="main-input" type="tel" id="phone" name="phone" />
+            </div>
+            <div class="btn">
+              <input type="submit" id="submit" value="الدخول" name="submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="js/country-phone.js"></script>
+  </body>
+</html>
