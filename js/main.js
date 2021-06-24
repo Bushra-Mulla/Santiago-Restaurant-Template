@@ -1,3 +1,8 @@
+$(document).ready(function () {
+  const current = $(".active").text();
+  console.log(current);
+  $(".corrent").text(current);
+});
 
 $(".class").on("click", function (event) {
   const current = event.target;
@@ -16,15 +21,12 @@ for (i = 0; i < acc.length; i++) {
   };
 }
 //  overlay visiblity
-$(".new-comment").on('click',()=>{
+$(".new-comment").on("click", () => {
   $(".overlay").addClass("visible");
-
 });
 $(".add-comment").on("click", () => {
   $(".visible").removeClass("visible");
 });
-
-
 
 //propgress bar step
 const previousBtn = document.getElementById("previousBtn");
@@ -60,16 +62,4 @@ previousBtn.addEventListener("click", () => {
 
 finishBtn.addEventListener("click", () => {
   location.reload();
-});
-
-// slider
-$(".carousel").flickity({
-  // options
-  cellAlign: "left",
-  contain: true,
-});
-$(".main-carousel").flickity({
-  // options
-  cellAlign: "left",
-  contain: true,
 });

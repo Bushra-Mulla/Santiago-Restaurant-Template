@@ -885,13 +885,10 @@ input[type="number"]::-webkit-outer-spin-button {
   text-align: center;
 }
 
-/* default full-width cells */
-/* external css: flickity.css */
+/* slider */
 
 .carousel {
-  background: rgb(201, 122, 122);
-}
-
+margin-top: 40px;}
 .carousel-cell {
   height: 228px;
   margin-right: 10px;
@@ -900,12 +897,10 @@ input[type="number"]::-webkit-outer-spin-button {
   padding: 0 15px;
 }
 
-@media screen and (min-width: 768px) {
-  /* half-width cells for larger devices */
+@media (max-width: 768px) {
   .carousel-cell {
+    width:100%;
+    padding: 0 5px;
+    margin: 0;
   }
-}
-.flickity-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 5px #19f;
 }
