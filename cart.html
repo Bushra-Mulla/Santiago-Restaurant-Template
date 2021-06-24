@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -23,11 +24,10 @@
   <body>
     <header>
       <div class="container center">
-        
         <div class="nav">
           <a href="">
             <span class="material-icons-outlined toggle-menu"> menu </span>
-            </a>
+          </a>
 
           <a href="cart.html" class="cart-icon">
             <span class="material-icons-outlined"> shopping_cart </span>
@@ -89,9 +89,12 @@
                 <textarea name="comment" placeholder="اضف ملاحظة"></textarea>
               </div>
 
-              <div class="btn-section">
-                <input type="button" class="btn delete" value="حذف" />
-                <div class="btn number-input">
+              <div class="btn-section" id="cart">
+                <button class="delete btns">
+                  <i class="material-icons-outlined"> remove_shopping_cart </i>
+                  حذف
+                </button>
+                <div class="btns number-input">
                   <button
                     onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                     class="minus"
@@ -112,9 +115,13 @@
             </div>
           </div>
         </div>
-        <div class="btn-section">
-          <button id="nextBtn"><a href="check-out.html">التالى</a></button>
-          <button class="btn back"><a href="index.html">العودة للقائمة</a></button>
+        <div class="btn-section" id="cart">
+          <button class="btns" id="nextBtn">
+            <a href="check-out.html">التالى</a>
+          </button>
+          <button class="btn back">
+            <a href="index.html">العودة للقائمة</a>
+          </button>
         </div>
         <!-- <div id="main">
           <button id="previousBtn">Previous</button>
