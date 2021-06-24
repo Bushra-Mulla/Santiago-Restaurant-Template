@@ -144,6 +144,8 @@ form {
 .form-box .submit:hover {
   background: #535353 0% 0% no-repeat padding-box;
 }
+
+
 .order-form .form-box textarea {
   height: 155px;
   width: 96%;
@@ -152,7 +154,6 @@ form {
 }
 
 .order-form .form-box .add {
-  background: #ffffff 0% 0% no-repeat padding-box;
   border: 2px solid #ddd;
   border-radius: 15px;
   text-align: center;
@@ -161,13 +162,13 @@ form {
 }
 
 .order-form .form-box .accordion {
-  background: #ffffff 0% 0% no-repeat padding-box;
   cursor: pointer;
-  padding: 18px;
+  padding: 0 18px;
   width: 100%;
   text-align: right;
   outline: none;
   transition: 0.4s;
+  margin: 0;
 }
 .order-form .form-box .inner {
   width: 100%;
@@ -184,13 +185,10 @@ form {
   font-weight: bold;
   float: left;
   margin-left: 5px;
-  position: relative;
-  bottom: 20px;
-  transform: translate(-50%, -50%) rotate(0deg);
 }
 
 .order-form .form-box .active:after {
-  transform: translate(-50%, -50%) rotate(180deg);
+  transform: rotate(180deg);
 }
 .order-form .form-box .panel {
   padding: 0 18px;
