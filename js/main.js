@@ -41,7 +41,7 @@ $(document).ready(function () {
     slidesToShow: 3,
     rtl: true,
     centerMode: true,
-    centerPadding: "60px",
+    centerPadding: "20px",
 
     responsive: [
       {
