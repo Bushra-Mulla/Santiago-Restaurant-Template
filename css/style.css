@@ -537,7 +537,7 @@ span.star-inactive {
 @media (max-width: 767px) {
   .content .menu#details,
   .content .menu#cart {
-    grid-template-columns: repeat(auto-fill, minmax(224px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
   }
 }
 .content .menu#cart .info h2 {
@@ -655,7 +655,7 @@ span.star-inactive {
 }
 .check-out table th {
   border-left: 1px solid #dee2e6;
-  padding-left: 0;
+  padding: 0;
 }
 
 .zigzag-card {
