@@ -15,10 +15,6 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
-    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/form.css" />
 
@@ -105,23 +101,49 @@
         <div class="nav__overlay"></div>
       </div>
     </nav>
-    <div class="form-box">
+    <div id="stepProgressBar" class="">
+      <div class="step">
+        <div class="bullet completed"></div>
+        <p class="step-text">طلباتك</p>
+      </div>
+      <div class="step">
+        <div class="bullet completed"></div>
+        <p class="step-text">الفاترة</p>
+      </div>
+      <div class="step">
+        <div class="bullet active"></div>
+        <p class="step-text">التنفيذ</p>
+      </div>
+    </div>
+    <div class="content">
       <div class="container">
-        <div class="intro">
-          <h3 class="form-title mb-5">تسجيل الدخول</h3>
-          <form class="row g-3" action="verification.html">
-            <div class="mb-3 col-12">
-              <div class="mb-3 col-10 mx-auto">
-                <label for="phone">رقم الجوال</label>
-                <input class="main-input" type="tel" id="phone" name="phone" />
-              </div>
-            </div>
-            <div class="btn mx-auto">
-              <input type="submit" class="black" id="submit" value="الدخول" name="submit" />
-            </div>
-          </form>
-          <a href="./register.html" class="register-link">ليس لديك حساب؟</a>
+        <div class="zigzag-card">
+          <div class="zigzag1"></div>
+          <div class="zigzag2"></div>
+          <div class="card-body">
+            <h3>رقم الطلب</h3>
+            <h3>3565</h3>
+            <p class="thanks">thank you</p>
+            <p class="">شكرا لزيارتك</p>
+          </div>
         </div>
+          <div id="stepProgressBar" class="">
+            <div class="step">
+              <h5 class="pb-5">حالة الطلب:</h5>
+            </div>
+            <div class="step">
+              <div class="bullet completed side-color"></div>
+              <p class="step-text">الفاترة</p>
+            </div>
+            <div class="step">
+              <div class="bullet active"></div>
+              <p class="step-text">التنفيذ</p>
+            </div>
+        </div>
+<div  class="side-color mx-auto mt-3">
+        <a href="index.html">رجوع الى الصفحة الرئيسية</a>
+
+</div>
       </div>
     </div>
 
@@ -138,10 +160,6 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-
     <script src="js/main.js"></script>
-    <script src="js/country-phone.js"></script>
   </body>
 </html>

@@ -4,34 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <title>Santiago</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;600;700&display=swap"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
     />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
-    <link href="img/logo.png" rel="icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/form.css" />
 
-    <title>Santiago Restaurant</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <header>
-      <div class="container center">
-        
-        <div class="nav">
-          <a href="">
-            <span class="material-icons-outlined toggle-menu"> menu </span>
-            </a>
-
-          <a href="cart.html" class="cart-icon">
+    <nav class="navbar">
+      <a href="#">
+        <span class="material-icons-outlined toggle-menu"> menu </span>
+      </a>
+      <div class="container">
+        <div class="nav-link">
+          <a href="#">
+            <span class="material-icons-outlined"> menu </span>
+          </a>
+          <a href="cart.html" class="cart-icon" data-count="4">
             <span class="material-icons-outlined"> shopping_cart </span>
-            <span class="badge">4</span>
           </a>
           <a href="login.html" class="profile">
             <span class="material-icons-outlined"> account_circle </span>
@@ -40,23 +40,74 @@
         <a href="/" class="logo">
           <img src="img/logo.svg" alt="logo" class="logo" />
         </a>
-        <div class="lang-select center">
-          <span class="material-icons-outlined"> language </span>
-          <select name="lang">
-            <option value="ar">العربية</option>
-            <option value="en">الانجليزية</option>
-          </select>
+        <div class="dropdown nav-link">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton2"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="material-icons-outlined language-icon">
+              language
+            </span>
+            <span class="language"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-item lang select" href="#">العربية</a></li>
+            <li><a class="dropdown-item lang" href="#">الانجليزية </a></li>
+          </ul>
         </div>
       </div>
-    </header>
 
+      <div class="nav">
+        <div class="nav__links">
+          <a href="cart.html" class="nav__link" data-count="4">
+            <span class="material-icons-outlined"> home </span>
+            الرئيسية
+          </a>
+          <a href="cart.html" class="nav__link" data-count="4">
+            <span class="material-icons-outlined"> shopping_cart </span>
+            سلة المشتريات
+          </a>
+          <a href="login.html" class="nav__link">
+            <span class="material-icons-outlined"> account_circle </span>
+            تسجيل الدخول/التسجيل
+          </a>
+          <a
+            class="nav__link"
+            data-bs-toggle="collapse"
+            href="#collapseExample"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            <span class="material-icons-outlined language-icon">
+              language
+            </span>
+            اللغة
+          </a>
+          <div class="collapse" id="collapseExample">
+            <li>
+              <a class="dropdown-item nav__link lang select" href="#"
+                >العربية</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item nav__link lang" href="#">الانجليزية </a>
+            </li>
+          </div>
+        </div>
+        <div class="nav__overlay"></div>
+      </div>
+    </nav>
     <div id="stepProgressBar">
       <div class="step">
-        <div class="bullet"></div>
+        <div class="bullet completed"></div>
         <p class="step-text">طلباتك</p>
       </div>
       <div class="step">
-        <div class="bullet"></div>
+        <div class="bullet active"></div>
         <p class="step-text">الفاترة</p>
       </div>
       <div class="step">
@@ -64,105 +115,145 @@
         <p class="step-text">التنفيذ</p>
       </div>
     </div>
-
     <div class="content">
-    <div class="shopping-cart">
-      <div class="container">
-        <div class="item article">
-          <div class="quantity">
-            <div class="number-input">
-              <button
-                onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                class="minus"
-              ></button>
-              <input
-                class="quantity"
-                min="0"
-                name="quantity"
-                value="1"
-                type="number"
-              />
-              <button
-                onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                class="plus"
-              ></button>
-            </div>
-          </div>
-          <div class="meal">
-            <span>بان تشيلى مع بطاطس</span>
-          </div>
-          <div class="total-price">20 ريال سعودى</div>
-        </div>
-        <div class="item article">
-          <div class="quantity">
-            <div class="number-input">
-              <button
-                onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                class="minus"
-              ></button>
-              <input
-                class="quantity"
-                min="0"
-                name="quantity"
-                value="1"
-                type="number"
-              />
-              <button
-                onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                class="plus"
-              ></button>
-            </div>
-          </div>
-          <div class="meal">
-            <span>بان تشيلى مع بطاطس</span>
-          </div>
-          <div class="total-price">20 ريال سعودى</div>
-        </div>
-        <div class="form-box">
-          <div class="desc">
-            <input
-              class="main-input"
-              placeholder="رمز قسيمة الخصم"
-              type="text"
-            />
-            <input class="check-btn" type="button" value="تفعيل القسيمة" />
-          </div>
-        </div>
-
-        <div class="item article">
-          <div class="bill">
-            <span>الخصم</span>
-          </div>
-          <div class="total-price">20 ريال سعودى</div>
-        </div>
-        <div class="item article">
-          <div class="bill">
-            <span>ضريبة القيمة المضافة</span>
-          </div>
-          <div class="total-price">20 ريال سعودى</div>
-        </div>
-        <div class="item article">
-          <div class="bill">
-            <span>الاجمالى</span>
-          </div>
-          <div class="total-price">20 ريال سعودى</div>
+      <div class="check-out m-5">
+        <div class="container p-5">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <div class="btn number-input">
+                    <button
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                      class="minus"
+                    ></button>
+                    <input
+                      class="quantity"
+                      min="0"
+                      name="quantity"
+                      value="1"
+                      type="number"
+                    />
+                    <button
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                      class="plus"
+                    ></button>
+                  </div>
+                </th>
+                <td>بان تشيلى مع بطاطس</td>
+                <td>20 ريال سعودى</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div class="btn number-input">
+                    <button
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                      class="minus"
+                    ></button>
+                    <input
+                      class="quantity"
+                      min="0"
+                      name="quantity"
+                      value="1"
+                      type="number"
+                    />
+                    <button
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                      class="plus"
+                    ></button>
+                  </div>
+                </th>
+                <td>بان تشيلى مع بطاطس</td>
+                <td>20 ريال سعودى</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div class="btn number-input">
+                    <button
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                      class="minus"
+                    ></button>
+                    <input
+                      class="quantity"
+                      min="0"
+                      name="quantity"
+                      value="1"
+                      type="number"
+                    />
+                    <button
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                      class="plus"
+                    ></button>
+                  </div>
+                </th>
+                <td>بان تشيلى مع بطاطس</td>
+                <td>20 ريال سعودى</td>
+              </tr>
+              <tr>
+                <th scope="row">المجموع</th>
+                <td></td>
+                <td>60 ريال سعودى</td>
+              </tr>
+              <tr>
+                <td colspan="3" class='p-5'>
+                  <form class="row g-3 md-flex justify-content-md-around">
+                    <div class="col-auto">
+                      <input
+                        type="text"
+                        class="my-auto  p-2 border border-2 bg-light"
+                        placeholder="رمز قسيمة الخصم"
+                      />
+                    </div>
+                    <div class="col-auto">
+                      <button type="submit" class="btn my-auto p-2 border border-secondary">
+                        تفعيل القسيمة
+                      </button>
+                    </div>
+                  </form>
+                </td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <th scope="row">الخصم</th>
+                <td></td>
+                <td>10 ريال سعودى</td>
+              </tr>
+              <tr>
+                <th scope="row">ضريبة القيمة المضافة</th>
+                <td></td>
+                <td>70 ريال سعودى</td>
+              </tr>
+              <tr>
+                <th scope="row">الاجمالى</th>
+                <td></td>
+                <td>ريال سعودى</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-      
     </div>
-        <div class="btn-section" id="cart">
-          <button class="btns" id="nextBtn">
-            <a href="check-out.html">التالى</a>
-          </button>
-          <button class="btn back">
+                <div class="d-grid gap-2 d-md-flex justify-content-center">
+          <a href="order.html"><button class="btn black ml-5" id="nextBtn">
+            تنفيذ الطلب
+          </button></a>
+          <button class="btn back mr-5">
             <a href="index.html">العودة للقائمة</a>
           </button>
         </div>
-</div>
-    <div id="footer" class="border-top">
-      <div class="container">
-        <footer class="mt-5"></footer>
-      </div>
-    </div>
+    <footer class="mt-5">
+      <div class="container"></div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

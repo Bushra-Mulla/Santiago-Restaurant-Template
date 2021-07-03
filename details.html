@@ -4,42 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <title>Santiago</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;600;700&display=swap"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
     />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-    />
-
-    <link href="img/logo.png" rel="icon" />
-
-    <title>Santiago</title>
   </head>
   <body>
-    <header>
-      <div class="container center">
-        <div class="nav">
-          <a href="">
-            <span class="material-icons-outlined toggle-menu"> menu </span>
+    <nav class="navbar">
+      <a href="#">
+        <span class="material-icons-outlined toggle-menu"> menu </span>
+      </a>
+      <div class="container">
+        <div class="nav-link">
+          <a href="#">
+            <span class="material-icons-outlined"> menu </span>
           </a>
-
-          <a href="cart.html" class="cart-icon">
+          <a href="cart.html" class="cart-icon" data-count="4">
             <span class="material-icons-outlined"> shopping_cart </span>
-            <span class="badge">4</span>
           </a>
           <a href="login.html" class="profile">
             <span class="material-icons-outlined"> account_circle </span>
@@ -48,31 +43,91 @@
         <a href="/" class="logo">
           <img src="img/logo.svg" alt="logo" class="logo" />
         </a>
-        <div class="lang-select center">
-          <span class="material-icons-outlined"> language </span>
-          <select name="lang">
-            <option value="ar">العربية</option>
-            <option value="en">الانجليزية</option>
-          </select>
+        <div class="dropdown nav-link">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton2"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="material-icons-outlined language-icon">
+              language
+            </span>
+            <span class="language"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-item lang select" href="#">العربية</a></li>
+            <li><a class="dropdown-item lang" href="#">الانجليزية </a></li>
+          </ul>
         </div>
       </div>
-    </header>
+
+      <div class="nav">
+        <div class="nav__links">
+          <a href="cart.html" class="nav__link" data-count="4">
+            <span class="material-icons-outlined"> home </span>
+            الرئيسية
+          </a>
+          <a href="cart.html" class="nav__link" data-count="4">
+            <span class="material-icons-outlined"> shopping_cart </span>
+            سلة المشتريات
+          </a>
+          <a href="login.html" class="nav__link">
+            <span class="material-icons-outlined"> account_circle </span>
+            تسجيل الدخول/التسجيل
+          </a>
+          <a
+            class="nav__link"
+            data-bs-toggle="collapse"
+            href="#collapseExample"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            <span class="material-icons-outlined language-icon">
+              language
+            </span>
+            اللغة
+          </a>
+          <div class="collapse" id="collapseExample">
+            <li>
+              <a class="dropdown-item nav__link lang select" href="#"
+                >العربية</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item nav__link lang" href="#">الانجليزية </a>
+            </li>
+          </div>
+        </div>
+        <div class="nav__overlay"></div>
+      </div>
+    </nav>
+
+
+
 
     <div class="content">
       <div class="container">
-        <h1>قائمة الطعام</h1>
+        <h1 class="mt-5">قائمة الطعام</h1>
         <ul class="path">
           <li>
-            <a href="">قائمة الطعام</a>
+            <a href="index.html">قائمة الطعام</a>
           </li>
           <li>
-            <span href="">الفطور</span>
+            <a href="meals.html"> < الفطور </a>
+          </li>
+          <li>
+            <a href="meals.html"> < الفطور الصحى </a>
+          </li>
+          <li>
+            <a href="meals.html"> بان تشيلى مع بطاطس </a>
           </li>
         </ul>
-
-        <div class="landing detail">
+        <div class="landing">
           <div class="container">
-            <img src="img/2/Mask5.png" alt="" />
+            <img class="img-fluid" src="img/1/Mask Group 35.png" alt="" />
           </div>
         </div>
 
@@ -80,7 +135,9 @@
           <div class="order-form">
             <div class="info">
               <div class="group">
-                <h2 class="title">بان تشيلى مع بطاطس</h2>
+                <h2 class="title">بان تشيلى مع بطاطس
+                    <div class="liner"></div>
+                </h2>
                 <span class="">20 ريال سعودى</span>
               </div>
               <div class="group">
@@ -98,130 +155,155 @@
             <div class="form-box">
               <form action="">
                 <div>
-                  <div class="accordion title article">
-                    إختيار من : (إختر 1 فقط)
-                  </div>
-
-                  <div class="panel show">
-                    <div class="group">
-                      <label for="mediom">
-                        <input type="radio" name="size" value="" />
-                        <span class="text"> الحجم الوسط</span></label
-                      >
-                      <span class="price">20 ريال سعودى</span>
-                    </div>
-                    <div class="group">
-                      <label for="larg">
-                        <input
-                          value="kl"
-                          type="radio"
-                          name="size"
-                          value="larg"
-                        />
-                        <span class="text">الحجم الكبير</span>
-                      </label>
-
-                      <span class="price">20 ريال سعودى</span>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="accordion title article">
-                    هل ترغب في اضافة شيء؟
-                  </div>
-                  <div class="panel show">
-                    <div class="checkbox">
-                      <div class="group">
-                        <label for="check1">
-                          <input
-                            type="checkbox"
-                            class="checkbox"
-                            name="check1"
-                            value=""
-                          />
-                          <span class="text">إضافة جبنة موتزاريلا</span>
-                        </label>
-                        <span class="price">20 ريال سعودى</span>
-                      </div>
-                      <div class="group">
-                        <label for="check2">
-                          <input
-                            type="checkbox"
-                            class="checkbox"
-                            name="check2"
-                            value=""
-                          />
-                          <span class="text">إضافة صوص باربيكيو</span>
-                        </label>
-                        <span class="price">20 ريال سعودى</span>
-                      </div>
-                      <div class="group">
-                        <label for="check2">
-                          <input
-                            type="checkbox"
-                            class="checkbox"
-                            name="check3"
-                            value=""
-                          />
-                          <span class="text">إضافة سلطة طحينة</span></label
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                        <div
+                            class="accordion-button article title"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
                         >
-                        <span class="price">20 ريال سعودى</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="accordion title article">
-                    هل ترغب في إزالة شيء؟
-                  </div>
-                  <div class="panel show">
-                    <div class="checkbox">
-                      <div class="group">
-                        <label for="check1">
-                          <input
-                            type="checkbox"
-                            class="checkbox"
-                            name="check1"
-                            value=""
-                          />
-                          <span class="text">إزالة جبنة موتزاريلا</span>
-                        </label>
-                        <label for="check2">
-                          <input
-                            type="checkbox"
-                            class="checkbox"
-                            name="check2"
-                            value=""
-                          />
-                          <span class="text">إزالة صوص باربيكيو</span>
-                        </label>
-                        <label for="check2">
-                          <input
-                            type="checkbox"
-                            class="checkbox"
-                            name="check2"
-                            value=""
-                          />
-                          <span class="text">إزالة صوص باربيكيو</span>
-                        </label>
-                        <label for="check2">
-                          <input
-                            type="checkbox"
-                            class="checkbox"
-                            name="check3"
-                            value=""
-                          />
-                          <span class="text">إزالة سلطة طحينة</span></label
+                            إختيار من : (إختر 1 فقط)
+                        </div>
+                        </h2>
+                        <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse show"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
                         >
-                      </div>
+                        <div class="accordion-body row-cols-2 row ">
+                          <div class="select-item ">
+                            <input type="radio" id="mediom" name="size" value="" />
+                            <label for="mediom">
+                            
+                            <span class="text"> الحجم الوسط</span></label
+                            >
+                          </div>                            <span class="price">20 ريال سعودى</span> 
+
+                          <div class="select-item "> <input type="radio" name="size" id="larg" />
+                            <label for="larg">
+                           
+                            <span class="text">الحجم الكبير</span>
+                            </label>
+                        </div>                            <span class="price">20 ريال سعودى</span>
+
+                        </div>
+                        </div>
                     </div>
-                  </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header title article" id="headingTwo">
+                        <div
+                            class="accordion-button collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo"
+                        >
+                            هل ترغب في اضافة شيء؟
+                        </div>
+                        </h2>
+                        <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                        >
+                        <div class="accordion-body row row-cols-2">
+                          <div class="select-item">
+                            <input type="checkbox" class="checkbox" name="add" id="check1" />
+                            <label for="check1">
+                            <span class="text">إضافة جبنة موتزاريلا</span>
+                            </label>
+                          </div>
+                            <span class="price">20 ريال سعودى</span>
+                          <div class="select-item">
+                            <input type="checkbox" class="checkbox" name="add" id="check2" />
+                            <label for="check2">
+                            <span class="text">إضافة صوص باربيكيو</span>
+                            </label>                          
+                          </div>    
+                            <span class="price">20 ريال سعودى</span>
+                          <div class="select-item">
+                            <input type="checkbox" class="checkbox" name="add" id="check3" />
+                            <label for="check3"class="text">إضافة سلطة طحينة</label>
+                          </div>
+                            <span class="price">20 ريال سعودى</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header title article" id="headingThree">
+                        <div
+                            class="accordion-button collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree"
+                            aria-expanded="false"
+                            aria-controls="collapseThree"
+                        >
+                            هل ترغب في إزالة شيء؟
+                        </div>
+                        </h2>
+                        <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample"
+                        >
+                        <div class="accordion-body row row-cols-2">
+                          <div class="select-item ">
+                            <input
+                                type="checkbox"
+                                class="checkbox"
+                                name="remove"
+                                id="remove1"
+                            />
+                            <label for="remove1" class="text">إزالة جبنة موتزاريلا </label>
+
+                          </div>   
+                          <div class="select-item ">
+                            <input
+                                type="checkbox"
+                                class="checkbox"
+                                name="remove"
+                                id="remove2"
+                            />
+                            <label for="remove2" class="text">إزالة صوص باربيكيو</label>
+
+                          </div>   
+                          <div class="select-item ">
+                            <input
+                                type="checkbox"
+                                class="checkbox filled-in"
+                                name="remove"
+                                id="remove3"
+                            />
+                            <label for="remove3"  class="text">إزالة صوص باربيكيو </label>
+                          </div>   
+                          <div class="select-item ">
+                            <input
+                                type="checkbox"
+                                class="checkbox"
+                                name="remove"
+                                id="remove4"
+                            />
+                            <label for="remove4" class="text">إزالة سلطة طحينة </label>
+                          </div>
+
+                        </div>
+                        </div>
+                    </div>
                 </div>
-                <label for="comment">ملاحظات</label>
-                <textarea name="comment" placeholder="اضف ملاحظة"></textarea
-                ><br />
-                <div class="btn-section">
-                  <div class="btns number-input">
+                <label for="note" class="mt-4 mb-3 h4">ملاحظات</label>
+                <textarea name="note" id='note' placeholder="اضف ملاحظة"></textarea>
+                <div class="d-grid gap-2 d-md-flex justify-content-around">
+                    <button class="btn border border-secondary btn-center  w-25">
+                      <span class="material-icons-outlined pt-2">add_shopping_cart</span>    
+                      <span>اضافة</span>
+       
+                    </button>
+                    <div class="btn number-input border border-secondary">
                     <button
                       onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                       class="minus"
@@ -238,100 +320,129 @@
                       class="plus"
                     ></button>
                   </div>
-                  <div>
-                    <button class="btns add">
-                      <span>اضافة</span>
-                    </button>
-                  </div>
+                    <div>
+                </div>
                 </div>
               </form>
             </div>
           </div>
-          <div class="review-list">
+          <div class="review-list p-3">
             <div>
               <div class="review">
-                <div class="group border-buttom">
-                  <h2>التقييمات</h2>
+                <div class="row pt-3 article">
+                  <h4  class="col text-start">التقييمات</h2>
+                  <div class='col'>
+                    <span class="text-muted ">4.0</span><br />
+                    <span class="material-icons-outlined star-active">
+                    star
+                    </span><span class="material-icons-outlined star-active">
+                    star
+                    </span><span class="material-icons-outlined star-active">
+                    star
+                    </span><span class="material-icons-outlined star-active">
+                    star
+                    </span><span class="material-icons-outlined inactive  ml-3">
+                    star
+                    </span>
 
-                  <div>
-                    <span class="text-muted">4.0</span><br />
-                    <span class="fa fa-star star-active ml-3"></span>
-                    <span class="fa fa-star star-active"></span>
-                    <span class="fa fa-star star-active"></span>
-                    <span class="fa fa-star star-active"></span>
-                    <span class="fa fa-star inactive"></span>
                   </div>
+                  
                 </div>
               </div>
-
-              <ul>
-                <li class="card article">
-                  <div class="row d-flex">
-                    <div class="">
+              <div>
+                  <div class="article">
+                    <div class=" d-flex">
                       <img class="profile-pic" src="" />
                     </div>
-                    <div class="d-flex flex-column">
-                      <h3 class="mt-2 mb-0 mt-00">عبدالله محمد</h3>
-                      <div>
-                        <p class="">
-                          <span class="fa fa-star active"></span>
-                          <span class="fa fa-star active"></span>
-                          <span class="fa fa-star active"></span>
-                          <span class="fa fa-star active"></span>
-                          <span class="fa fa-star star-inactive"></span>
+                    <div class=" row row-cols-2 p-2 mr-3">
+                    <div >
+                        <h4 class="mt-2 mb-0 mt-00">عبدالله محمد</h4>
+                        <span class="material-icons-outlined star-active">
+                        star
+                        </span><span class="material-icons-outlined star-active">
+                        star
+                        </span><span class="material-icons-outlined star-active">
+                        star
+                        </span><span class="material-icons-outlined star-active">
+                        star
+                        </span><span class="material-icons-outlined inactive  ml-3">
+                        star
+                        </span>
+
+                    </div>
+                   <div class="ml-auto ">
+                      <p class="justify-content-md-end text-muted pt-5 pt-sm-3 ">منذ 3 أسابيع</p>
+                    </div>
+                    </div>       
+                    <div class="row mt-4 mr-4 p-2">
+                        <p class="content">
+                        طعم رائع و خدمة ممتازة لكم منى كل الشكر
                         </p>
-                      </div>
                     </div>
-                    <div class="ml-auto">
-                      <p class="text-muted pt-5 pt-sm-3">منذ 3 أسابيع</p>
+ 
+              </div>
+              <div class="">
+                    <div class=" d-flex">
+                      <img class="profile-pic" src="" />
                     </div>
-                  </div>
-                  <div class="row">
-                    <p class="content">
-                      طعم رائع و خدمة ممتازة لكم منى كل الشكر
-                    </p>
-                  </div>
-                </li>
-              </ul>
-              <button class="new-comment btns">اضف تقييمك</button>
+                    <div class=" row row-cols-2 p-2 mr-3">
+                    <div >
+                        <h4 class="mt-2 mb-0 mt-00">عبدالله محمد</h4>
+                        <span class="material-icons-outlined star-active">
+                        star
+                        </span><span class="material-icons-outlined star-active">
+                        star
+                        </span><span class="material-icons-outlined star-active">
+                        star
+                        </span><span class="material-icons-outlined star-active">
+                        star
+                        </span><span class="material-icons-outlined inactive  ml-3">
+                        star
+                        </span>
+
+                    </div>
+                   <div class="ml-auto ">
+                      <p class="text-end text-muted pt-5 pt-sm-3 ">منذ 3 أسابيع</p>
+                    </div>
+                    </div>       
+                    <div class="row mt-4 mr-4 p-2">
+                        <p class="content">
+                        طعم رائع و خدمة ممتازة لكم منى كل الشكر
+                        </p>
+                    </div>
+ 
+              </div>
+              </div>
+
+              <button class="new-comment mx-auto my-3 btn">اضف تقييمك</button>
+
             </div>
           </div>
         </div>
-        <!-- slider section -->
-        <div
-          class="main-carousel"
-          data-flickity='{"pageDots": false,
-       "cellAlign": "left"
-       ,"wrapAround": true,
-        "contain": true, "freeScroll": true}'
-        >
-          <div class="carousel-cell">
-              <img src="img/3/dinner-2.png" alt="img" />
-              <div class="sold-out">sold out</div>
-              <a href="details.html"
-                ><i class="fas fa-cart-arrow-down add circle"></i
-              ></a>
-              <i class="far fa-heart"></i>
+                <!-- slider section -->
+
+        <h3 class="menu">الأفضل مبيعا</h3>
+        <div class="slider ">
+         
+          <div>              
+            <img src="img/2/dinner-1.png" alt="categorie" />
           </div>
-          <div class="carousel-cell">
-              <img src="img/3/dinner-2.png" alt="img" />
-              <div class="sold-out">sold out</div>
-              <a href="details.html"
-                ><i class="fas fa-cart-arrow-down add circle"></i
-              ></a>
-              <i class="far fa-heart"></i>
+          <div>
+            <img src="img/2/dinner-2.png" alt="categorie" />
           </div>
-          <div class="carousel-cell">
-              <img src="img/3/dinner-2.png" alt="img" />
-              <div class="sold-out">sold out</div>
-              <a href="details.html"
-                ><i class="fas fa-cart-arrow-down add circle"></i
-              ></a>
-              <i class="far fa-heart"></i>
+           <div>
+            <img src="img/2/breakfast-4.png" alt="categorie" />
           </div>
-        </div>
+        
+          <div>              
+            <img src="img/2/dinner-1.png" alt="categorie" />
+          </div>
+           <div>
+            <img src="img/2/breakfast-4.png" alt="categorie" />
+          </div> 
+        </div> 
       </div>
-      <div class="overlay">
+       <div class="overlay">
         <img src="img/Group 509.svg" alt="" />
         <h2>نحن نسعى دائما لارضاء عملاؤنا</h2>
         <h3>ماهو تقييمك ؟</h3>
@@ -352,15 +463,24 @@
         <button class="btn add-comment">اضف تقييمك</button>
       </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+     
+    <footer class="mt-5">
+      <div class="container"></div>
+    </footer>
+    
     <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="js/mixitup.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

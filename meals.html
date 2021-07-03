@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santiago</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#">
+        <span class="material-icons-outlined toggle-menu"> menu </span>
+      </a>
+      <div class="container">
+        <div class="nav-link">
+          <a href="#">
+            <span class="material-icons-outlined"> menu </span>
+          </a>
+          <a href="cart.html" class="cart-icon" data-count="4">
+            <span class="material-icons-outlined"> shopping_cart </span>
+          </a>
+          <a href="login.html" class="profile">
+            <span class="material-icons-outlined"> account_circle </span>
+          </a>
+        </div>
+        <a href="/" class="logo">
+          <img src="img/logo.svg" alt="logo" class="logo" />
+        </a>
+        <div class="dropdown nav-link">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton2"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="material-icons-outlined language-icon">
+              language
+            </span>
+            <span class="language"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-item lang select" href="#">العربية</a></li>
+            <li><a class="dropdown-item lang" href="#">الانجليزية </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="nav">
+        <div class="nav__links">
+          <a href="cart.html" class="nav__link" data-count="4">
+            <span class="material-icons-outlined"> home </span>
+            الرئيسية
+          </a>
+          <a href="cart.html" class="nav__link" data-count="4">
+            <span class="material-icons-outlined"> shopping_cart </span>
+            سلة المشتريات
+          </a>
+          <a href="login.html" class="nav__link">
+            <span class="material-icons-outlined"> account_circle </span>
+            تسجيل الدخول/التسجيل
+          </a>
+          <a
+            class="nav__link"
+            data-bs-toggle="collapse"
+            href="#collapseExample"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            <span class="material-icons-outlined language-icon">
+              language
+            </span>
+            اللغة
+          </a>
+          <div class="collapse" id="collapseExample">
+            <li>
+              <a class="dropdown-item nav__link lang select" href="#"
+                >العربية</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item nav__link lang" href="#">الانجليزية </a>
+            </li>
+          </div>
+        </div>
+        <div class="nav__overlay"></div>
+      </div>
+    </nav>
+
+    <div class="landing">
+      <div class="container">
+        <img src="img/1/Mask5.png" class="img-fluid" alt="" />
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="container">
+        <h1 class="mt-5">قائمة الطعام</h1>
+
+        <ul class="path" >
+          <li>
+            <a href="index.html">قائمة الطعام</a>
+          </li>
+          <li><a href="index.html">< الفطور </a></li>
+          <li class="corrent"></li>
+        </ul>
+
+        <ul class="nav justify-content-around mt-5 mb-5 pr-0">
+          <li class="nav-link active">الفطور</li>
+          <li class="nav-link" data-filter=".healthy-breakfast">
+            الفطور الصحى
+          </li>
+          <li class="nav-link" data-filter=".spicials-breakfast">
+            الفطور المميز
+          </li>
+          <li class="nav-link" data-filter=".offers-breakfast">العروض</li>
+        </ul>
+
+        <div class="menu">
+          <div class="card details mix healthy-breakfast">
+            <a href="details.html">
+              <img
+                class="card-img-top"
+                src="img/3/breakfast-4.png"
+                alt="categorie"
+              />
+              <div class="info">
+                <div class="group">
+                  <h2 class="pb-1">
+                    بان تشيلى مع بطاطس
+                    <div class="liner"></div>
+                  </h2>
+                  <span>20 ريال سعودى</span>
+                </div>
+                <p>
+                  الدجاج او اللحم او الجمبرى المطبوخ على المقلاة الصينى مضاف
+                  اليه صلصة الفلفل الحار او التوابل الصينية
+                </p>
+                <div class="group">
+                  <h2>السعرات الحرارية</h2>
+                  <span>(70 سعرة حرارية)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card details mix offers-breakfast">
+            <a href="details.html">
+              <img
+                class="card-img-top"
+                src="img/3/breakfast-6.png"
+                alt="categorie"
+              />
+              <div class="info">
+                <div class="group">
+                  <h2 class="pb-1">
+                    بان تشيلى مع بطاطس
+                    <div class="liner"></div>
+                  </h2>
+                  <span>20 ريال سعودى</span>
+                </div>
+                <p>
+                  الدجاج او اللحم او الجمبرى المطبوخ على المقلاة الصينى مضاف
+                  اليه صلصة الفلفل الحار او التوابل الصينية
+                </p>
+                <div class="group">
+                  <h2>السعرات الحرارية</h2>
+                  <span>(70 سعرة حرارية)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card details mix healthy-breakfast">
+            <a href="details.html">
+              <img
+                class="card-img-top"
+                src="img/3/breakfast-3.png"
+                alt="categorie"
+              />
+              <div class="info">
+                <div class="group">
+                  <h2 class="pb-1">
+                    بان تشيلى مع بطاطس
+                    <div class="liner"></div>
+                  </h2>
+                  <span>20 ريال سعودى</span>
+                </div>
+                <p>
+                  الدجاج او اللحم او الجمبرى المطبوخ على المقلاة الصينى مضاف
+                  اليه صلصة الفلفل الحار او التوابل الصينية
+                </p>
+                <div class="group">
+                  <h2>السعرات الحرارية</h2>
+                  <span>(70 سعرة حرارية)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card details mix spicials-breakfast">
+            <a href="details.html">
+              <img
+                class="card-img-top"
+                src="img/3/dinner-2.png"
+                alt="categorie"
+              />
+              <div class="info">
+                <div class="group">
+                  <h2 class="pb-1">
+                    بان تشيلى مع بطاطس
+                    <div class="liner"></div>
+                  </h2>
+                  <span>20 ريال سعودى</span>
+                </div>
+                <p>
+                  الدجاج او اللحم او الجمبرى المطبوخ على المقلاة الصينى مضاف
+                  اليه صلصة الفلفل الحار او التوابل الصينية
+                </p>
+                <div class="group">
+                  <h2>السعرات الحرارية</h2>
+                  <span>(70 سعرة حرارية)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card details mix spicials-breakfast">
+            <a href="details.html">
+              <img
+                class="card-img-top"
+                src="img/3/dinner-6.png"
+                alt="categorie"
+              />
+              <div class="info">
+                <div class="group">
+                  <h2 class="pb-1">
+                    بان تشيلى مع بطاطس
+                    <div class="liner"></div>
+                  </h2>
+                  <span>20 ريال سعودى</span>
+                </div>
+                <p>
+                  الدجاج او اللحم او الجمبرى المطبوخ على المقلاة الصينى مضاف
+                  اليه صلصة الفلفل الحار او التوابل الصينية
+                </p>
+                <div class="group">
+                  <h2>السعرات الحرارية</h2>
+                  <span>(70 سعرة حرارية)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card details mix spicials-breakfast">
+            <a href="details.html">
+              <img
+                class="card-img-top"
+                src="img/3/breakfast-1.png"
+                alt="categorie"
+              />
+              <div class="info">
+                <div class="group">
+                  <h2 class="pb-1">
+                    بان تشيلى مع بطاطس
+                    <div class="liner"></div>
+                  </h2>
+                  <span>20 ريال سعودى</span>
+                </div>
+                <p>
+                  الدجاج او اللحم او الجمبرى المطبوخ على المقلاة الصينى مضاف
+                  اليه صلصة الفلفل الحار او التوابل الصينية
+                </p>
+                <div class="group">
+                  <h2>السعرات الحرارية</h2>
+                  <span>(70 سعرة حرارية)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="mt-5">
+      <div class="container"></div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

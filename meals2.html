@@ -37,7 +37,7 @@
           </a>
         </div>
         <a href="/" class="logo">
-          <img  class="card-img-top" src="img/logo.svg" alt="logo" class="logo" />
+          <img src="img/logo.svg" alt="logo" class="logo" />
         </a>
         <div class="dropdown nav-link">
           <button
@@ -106,120 +106,108 @@
         <img src="img/1/Mask5.png" class="img-fluid" alt="" />
       </div>
     </div>
+
     <div class="content">
       <div class="container">
         <h1 class="mt-5">قائمة الطعام</h1>
 
         <ul class="path">
-          <li>
-            <a href="index.html">قائمة الطعام</a>
-          </li>
+          <li><a href="index.html">قائمة الطعام</a></li>
+          <li><a href="meun-categorie.html">< الفطور </a></li>
           <li class="corrent"></li>
         </ul>
 
-        <ul class="nav justify-content-around pr-0 mt-5 mb-5">
-          <li class="nav-link " data-filter=".category-breakfast">
-            الفطور
+        <ul class="nav justify-content-around mt-5 mb-5 pr-0">
+          <li class="nav-link active" data-filter="all">الفطور</li>
+          <li class="nav-link" data-filter=".healthy-breakfast">
+            الفطور الصحى
           </li>
-          <li class="nav-link" data-filter=".category-lunch">وجبات الغذاء</li>
-          <li class="nav-link" data-filter=".category-dinner">وجبات العشاء</li>
-          <li class="nav-link" data-filter=".category-drinks">المشروبات</li>
-          <li class="nav-link" data-filter=".category-disserts">الحلويات</li>
-          <li class="nav-link" data-filter=".category-offers">العروض</li>
-          <li class="nav-link" data-filter=".category-spicials">
-            الأكلات المميزة
+          <li class="nav-link" data-filter=".spicials-breakfast">
+            الفطور المميز
           </li>
+          <li class="nav-link" data-filter=".offers-breakfast">العروض</li>
         </ul>
-        <div class="menu categorie">
-          <div class="card mix category-breakfast">
-            <a href="meals2.html">
-              <img  class="card-img-top" src="img/2/dinner-6.png" alt="categorie" />
-              <div class="info">
-                <h3>الفطور</h3>
+
+        <div class="menu" id="details">
+          <div class="card mb-3 mix">
+            <a href="details.html">
+              <div class="row g-0 mr-0">
+                <div class="col-md-4 pr-0 img">
+                  <img
+                    src="img/3/dinner-2.png"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                  <div class="sold-out">sold out</div>
+                  <div class="icon">
+                  <i class="material-icons-outlined ml-1 circle">
+                    add_shopping_cart </i
+                  ><i class="material-icons-outlined circle">
+                    favorite_border</i
+                  ></div>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body info">
+                    <h5 class="card-title">
+                      <div class="group">
+                        <h2>
+                          بان تشيلى مع بطاطس
+                          <div class="liner"></div>
+                        </h2>
+                        <span>20 ريال سعودى</span>
+                      </div>
+                    </h5>
+                    <p class="card-text">
+                      الدجاج او اللحم او الجمبرى المطبوخ على المقلاة الصينى مضاف
+                      اليه صلصة الفلفل الحار او التوابل الصينية
+                    </p>
+                    <div class="group">
+                      <h2>السعرات الحرارية</h2>
+                      <span>(70 سعرة حرارية)</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </a>
           </div>
-          <div class="card mix category-breakfast">
-            <a href="meals.html">
-              <img  class="card-img-top" src="img/2/dinner-1.png" alt="categorie" />
-              <div class="info">
-                <h3>فطور العائلات</h3>
-              </div>
-            </a>
-          </div>
-          <div class="card mix category-breakfast">
-            <a href="meals.html">
-              <img  class="card-img-top" src="img/2/dinner-2.png" alt="categorie" />
-              <div class="info">
-                <h3>فطور الأطفال</h3>
-              </div>
-            </a>
-          </div>
-          <div class="card mix category-breakfast">
-            <a href="meals2.html">
-              <img  class="card-img-top" src="img/2/breakfast-4.png" alt="categorie" />
-              <div class="info">
-                <h3>الفطور الصحى</h3>
-              </div>
-            </a>
-          </div>
-          <div class="card mix category-offers">
-            <a href="meals.html">
-              <img  class="card-img-top" src="img/2/dinner-1.png" alt="categorie" />
-              <div class="info">
-                <h3>العروض</h3>
-              </div>
-            </a>
-          </div>
-          <div class="card mix category-drinks">
-            <a href="meals.html">
-              <img  class="card-img-top" src="img/2/drink-2.png" alt="categorie" />
-              <div class="info">
-                <h3>المشروبات</h3>
-              </div>
-            </a>
-          </div>
-          <div class="card mix category-disserts">
-            <a href="meals.html">
-              <img  class="card-img-top" src="img/2/dessert-1.png" alt="categorie" />
-              <div class="info">
-                <h3>الحلويات</h3>
-              </div>
-            </a>
-          </div>
-          <div class="card mix category-spicials">
-            <a href="meals.html">
-              <img  class="card-img-top" src="img/2/breakfast-7.png" alt="categorie" />
-              <div class="info">
-                <h3>الفطور المميز</h3>
-              </div>
-            </a>
-          </div>
-                    <div class="card  mix category-spicials">
-            <a href="meals.html">
-              <img  class="card-img-top" src="img/1/breakfast-3.png" alt="categorie" />
-              <div class="card-body info">
-                <h3>وجبات مميزة</h3>
-              </div>
-            </a>
-          </div>
-          <div class="card mix category-dinner">
-            <a href="meals.html">
-              <img
-                class="card-img-top"
-                src="img/1/breakfast-2.png"
-                alt="categorie"
-              />
-              <div class="card-body info">
-                <h3>وجبات العشاء</h3>
-              </div>
-            </a>
-          </div>
-                    <div class="card mix category-lunch">
-            <a href="meals.html">
-              <img  class="card-img-top" src="img/1/breakfast-7.png" alt="categorie" />
-              <div class="card-body card-body info">
-                <h3>الوجبات الرئيسية</h3>
+          <div class="card mb-3 mix">
+            <a href="details.html">
+              <div class="row g-0 mr-0">
+                <div class="col-md-4 pr-0 img">
+                  <img
+                    src="img/3/dinner-2.png"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                  <div class="sold-out">sold out</div>
+                  <div class="icon">
+                  <i class="material-icons-outlined ml-1 circle">
+                    add_shopping_cart </i
+                  ><i class="material-icons-outlined circle">
+                    favorite_border</i
+                  ></div>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body info">
+                    <h5 class="card-title">
+                      <div class="group">
+                        <h2>
+                          بان تشيلى مع بطاطس
+                          <div class="liner"></div>
+                        </h2>
+                        <span>20 ريال سعودى</span>
+                      </div>
+                    </h5>
+                    <p class="card-text">
+                      الدجاج او اللحم او الجمبرى المطبوخ على المقلاة الصينى مضاف
+                      اليه صلصة الفلفل الحار او التوابل الصينية
+                    </p>
+                    <div class="group">
+                      <h2>السعرات الحرارية</h2>
+                      <span>(70 سعرة حرارية)</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </a>
           </div>

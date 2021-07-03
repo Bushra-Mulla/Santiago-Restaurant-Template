@@ -1,6 +1,7 @@
 // contry phone nomper
 const phoneInputField = document.querySelector("#phone");
 const phoneInput = window.intlTelInput(phoneInputField, {
+  preferredCountries: ["sa"],
   separateDialCode: true,
   autoFormat: true,
   utilsScript:

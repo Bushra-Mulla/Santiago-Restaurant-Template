@@ -1,65 +1,80 @@
 $(document).ready(function () {
-  const current = $(".active").text();
-  console.log(current);
-  $(".corrent").text(current);
+  console.log("object");
+  const lang = $(".select:first").text();
+  $(".language").text(lang);
 });
 
-$(".class").on("click", function (event) {
+$(".lang").on("click", (event) => {
+  const selectLang = event.target;
+  $(".select").removeClass("select");
+  $(selectLang).addClass("select");
+  $(".language").text($(selectLang).text());
+});
+
+const nav = $(".nav");
+$(".toggle-menu").on("click", () => {
+  $(nav).addClass("nav--open");
+});
+
+$(".nav__overlay").on("click", () => {
+  $(nav).removeClass("nav--open");
+});
+
+var mixer = mixitup(".menu", {
+  animation: {
+    duration: 610,
+    nudge: true,
+    reverseOut: false,
+    effects: "fade",
+  },
+});
+$("li.nav-link").on("click", function (event) {
   const current = event.target;
   $(".active").removeClass("active");
   $(current).addClass("active");
+  $(".corrent").text(" < " + $(current).text());
+});
+$(document).ready(function () {
+  $(".slider").slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    rtl: true,
+    centerMode: true,
+    centerPadding: "60px",
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
 });
 
-//create accordion
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].onclick = function () {
-    this.classList.toggle("active");
-    this.nextElementSibling.classList.toggle("show");
-  };
-}
 //  overlay visiblity
 $(".new-comment").on("click", () => {
   $(".overlay").addClass("visible");
 });
 $(".add-comment").on("click", () => {
   $(".visible").removeClass("visible");
-});
-
-//propgress bar step
-const previousBtn = document.getElementById("previousBtn");
-const nextBtn = document.getElementById("nextBtn");
-const finishBtn = document.getElementById("finishBtn");
-const content = document.getElementById("content");
-const bullets = [...document.querySelectorAll(".bullet")];
-
-const MAX_STEPS = 3;
-let currentStep = 1;
-
-nextBtn.addEventListener("click", () => {
-  bullets[currentStep - 1].classList.add("completed");
-  currentStep += 1;
-  previousBtn.disabled = false;
-  if (currentStep === MAX_STEPS) {
-    nextBtn.disabled = true;
-    finishBtn.disabled = false;
-  }
-  content.innerText = `Step Number ${currentStep}`;
-});
-
-previousBtn.addEventListener("click", () => {
-  bullets[currentStep - 2].classList.remove("completed");
-  currentStep -= 1;
-  nextBtn.disabled = false;
-  finishBtn.disabled = true;
-  if (currentStep === 1) {
-    previousBtn.disabled = true;
-  }
-  content.innerText = `Step Number ${currentStep}`;
-});
-
-finishBtn.addEventListener("click", () => {
-  location.reload();
 });
